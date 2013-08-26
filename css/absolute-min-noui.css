@@ -1,0 +1,36 @@
+.scroll-view{
+	overflow:hidden;
+	position:relative;
+
+
+	z-index:999;
+	
+	
+}
+.scroll-view ul{ 
+	
+  	margin: 0;
+ 	 padding: 0;
+  	list-style: none;
+  	float: left;
+  }
+.scroll-view  li{
+	
+	position: relative;
+	width:140px;
+	height:20px;
+    	display: block;
+    	float: left;
+    	
+}
+
+.scroller-background{
+	overflow:hidden;
+	position:absolute;
+	width:100%;
+	top:0px;
+	z-index:988;
+	
+}
+
+
