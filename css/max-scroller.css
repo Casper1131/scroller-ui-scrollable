@@ -1,0 +1,52 @@
+body{
+	padding: 0;
+	margin: 0
+}
+.scroll-view{
+	overflow:hidden;
+	position:relative;
+
+
+	z-index:999;
+	
+	
+}
+.scroll-view ul{ 
+	
+  	margin: 0;
+ 	 padding: 0;
+  	list-style: none;
+  	float: left;
+  }
+.scroll-view  li{
+	
+	position: relative;
+	width:140px;
+	height:20px;
+    	display: block;
+    	float: left;
+    	background:#990000;
+    	margin-right:4px
+}
+.scroller-button{
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	outline:0;
+}
+.scroller-background{
+	overflow:hidden;
+	position:absolute;
+	width:100%;
+	border-radius:3px;
+	padding-top:2px;
+	padding-bottom:2px;
+	top:0px;
+	z-index:988;
+	left:0px;
+	margin:0px;
+	padding:0px;
+	border-bottom:2px solid #08a;
+}
+
+

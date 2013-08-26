@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Absolute Minimum For Non Jquey UI List Elements</title>
+       
+        <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+         <link href="../css/absolute-min-ui.css" rel="stylesheet" />
+	
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+      <style type='text/css'>
+      		.scroller-button{
+				background:'#fff';border-color:'#fff'
+			}
+			.scroller-background{
+				background:'#fff';			
+				}
+				p{
+					font-weight:bold;
+					font-size:12px;
+				}
+					pre{
+					position:relative;
+					width:90%;
+					left:5%;
+					height:auto;
+					border:1px solid #000;
+					background:#303030;
+					color:#fff;
+					text-align: left;
+					padding:2px;
+					 white-space: pre-wrap;       /* css-3 */
+ 			white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ 	white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+cursor:pointer;
+				}
+				pre .label{
+					position:relative;
+					width:100%;
+					height:auto;
+					padding:0px;
+					margin:0px;
+					color:#fff;
+					border-bottom:1px solid #000
+				}
+		</style>
+
+        <!-- liteAccordion js -->
+        <script src="../js/jquery.scroller.min.js"></script>
+		 <script type="text/javascript">
+	
+		 	$(function(){
+		 		$('#tabs').tabs({
+ 					create:function( event, ui ) {
+ 						var len=$('#tabs').find('.ui-tabs-panel').length;
+ 						
+						
+ 							$('#tabs').find('.scroll-view').scroller({
+ 								background:{
+ 									css:{'border':'2px solid #d3d3d3','top':'-=2','left':'-=2'}
+ 								}
+ 							});
+ 					
+ 					}
+ 					});
+ 					$(window).resize(function(){
+ 						
+ 						$('#tabs').find('.scroll-view').scroller('resize').scroller('refit');
+ 					 });
+		 	});
+		 </script>
+    </head>
+    <body>
+		</p>
+			Below we have a simple scroller with custom buttons.
+		</p>
+        <div id="tabs">
+<div class='wrapper'> 
+   <div class='scroll-view'>     	
+  <ul>
+    <li><a href="#tabs-1">Nunc tincidunt</a></li>
+    <li><a href="#tabs-2">Proin dolor</a></li>
+    <li><a href="#tabs-3">Aenean lacinia</a></li>
+    <li><a href="#tabs-4">Other 4</a></li>
+    <li><a href="#tabs-5">Other 5</a></li>
+    <li><a href="#tabs-6">Other 6</a></li>
+    <li><a href="#tabs-7">Other 7</a></li>
+    <li><a href="#tabs-8">Other 8</a></li>
+    <li><a href="#tabs-9">Other 9</a></li>
+    <li><a href="#tabs-10">Other 10</a></li>
+  </ul>
+  </div>
+</div>
+  <div id="tabs-1">
+    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+  </div>
+  <div id="tabs-3">
+    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+  </div>
+  <div id="tabs-4">
+    <p>Other 4</p>
+  </div>
+  <div id="tabs-5">
+    <p>Other 5</p>
+  </div>
+  <div id="tabs-6">
+    <p>Other 6</p>
+  </div>
+  <div id="tabs-7">
+    <p>Other 7</p>
+  </div>
+  <div id="tabs-8">
+    <p>Other 8</p>
+  </div>
+  <div id="tabs-9">
+    <p>Other 9</p>
+  </div>
+  <div id="tabs-10">
+    <p>Other 10</p>
+  </div>
+</div>
+<pre>
+			<div class='label'>CSS</div>
+	.scroller-background{
+		overflow:hidden;
+		position:absolute;
+		width:100%;
+	    border-radius:3px;
+		top:0px;
+		z-index:988;
+	    left:0px;
+	    margin:0px;
+		padding:0px;
+	}
+	.scroll-view ul{
+		/*Only set this when the initial size of the is larger than scroll-view*/
+		position:relative;
+		width:3000%;
+		top:0px
+	}
+	.scroll-view li{
+		position:relative;
+	}
+	.scroll-view{
+		position:relative;
+		z-index:999;
+		overflow:hidden;
+		/*scroller must have an initial size*/
+		width:93%;
+		margin:0px;
+		padding:0px;
+	}
+	.wrapper{
+		position:relative;
+		width:100%;
+		margin:0px;
+		padding:0px;
+		text-align:left;
+	}
+</pre>
+<pre>
+<div class='label'>Javascript</div>	
+	$('#tabs').tabs({
+ 		create:function( event, ui ) {
+ 				var len=$('#tabs').find('.ui-tabs-panel').length;
+ 				$('#tabs').find('.scroll-view').scroller({
+ 						background:{
+ 									css:{'border':'2px solid #d3d3d3','top':'-=2','left':'-=2'}
+ 								}
+ 					});
+ 					
+ 				}
+ 		});
+ 	$(window).resize(function(){
+ 			$('#tabs').find('.scroll-view').scroller('resize').scroller('refit');
+ 	});
+		</pre>
+		<pre>
+<div class='label'>HTML</div>	
+   &lt;div id=&quot;tabs&quot;&gt;<br/>&lt;div class='wrapper'&gt; <br/>   &lt;div class='scroll-view'&gt;     	<br/>  &lt;ul&gt;<br/>    &lt;li&gt;&lt;a href=&quot;#tabs-1&quot;&gt;Nunc tincidunt&lt;/a&gt;&lt;/li&gt;<br/>    &lt;li&gt;&lt;a href=&quot;#tabs-2&quot;&gt;Proin dolor&lt;/a&gt;&lt;/li&gt;<br/>    &lt;li&gt;&lt;a href=&quot;#tabs-3&quot;&gt;Aenean lacinia&lt;/a&gt;&lt;/li&gt;<br/>    &lt;li&gt;&lt;a href=&quot;#tabs-4&quot;&gt;Other 4&lt;/a&gt;&lt;/li&gt;<br/>    &lt;li&gt;&lt;a href=&quot;#tabs-5&quot;&gt;Other 5&lt;/a&gt;&lt;/li&gt;<br/>    &lt;li&gt;&lt;a href=&quot;#tabs-6&quot;&gt;Other 6&lt;/a&gt;&lt;/li&gt;<br/>    &lt;li&gt;&lt;a href=&quot;#tabs-7&quot;&gt;Other 7&lt;/a&gt;&lt;/li&gt;<br/>    &lt;li&gt;&lt;a href=&quot;#tabs-8&quot;&gt;Other 8&lt;/a&gt;&lt;/li&gt;<br/>    &lt;li&gt;&lt;a href=&quot;#tabs-9&quot;&gt;Other 9&lt;/a&gt;&lt;/li&gt;<br/>    &lt;li&gt;&lt;a href=&quot;#tabs-10&quot;&gt;Other 10&lt;/a&gt;&lt;/li&gt;<br/>  &lt;/ul&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;<br/>  &lt;div id=&quot;tabs-1&quot;&gt;<br/>    &lt;p&gt;Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.&lt;/p&gt;<br/>  &lt;/div&gt;<br/>  &lt;div id=&quot;tabs-2&quot;&gt;<br/>    &lt;p&gt;Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.&lt;/p&gt;<br/>  &lt;/div&gt;<br/>  &lt;div id=&quot;tabs-3&quot;&gt;<br/>    &lt;p&gt;Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.&lt;/p&gt;<br/>    &lt;p&gt;Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.&lt;/p&gt;<br/>  &lt;/div&gt;<br/>  &lt;div id=&quot;tabs-4&quot;&gt;<br/>    &lt;p&gt;Other 4&lt;/p&gt;<br/>  &lt;/div&gt;<br/>  &lt;div id=&quot;tabs-5&quot;&gt;<br/>    &lt;p&gt;Other 5&lt;/p&gt;<br/>  &lt;/div&gt;<br/>  &lt;div id=&quot;tabs-6&quot;&gt;<br/>    &lt;p&gt;Other 6&lt;/p&gt;<br/>  &lt;/div&gt;<br/>  &lt;div id=&quot;tabs-7&quot;&gt;<br/>    &lt;p&gt;Other 7&lt;/p&gt;<br/>  &lt;/div&gt;<br/>  &lt;div id=&quot;tabs-8&quot;&gt;<br/>    &lt;p&gt;Other 8&lt;/p&gt;<br/>  &lt;/div&gt;<br/>  &lt;div id=&quot;tabs-9&quot;&gt;<br/>    &lt;p&gt;Other 9&lt;/p&gt;<br/>  &lt;/div&gt;<br/>  &lt;div id=&quot;tabs-10&quot;&gt;<br/>    &lt;p&gt;Other 10&lt;/p&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;
+		</pre>
+		<br>
+		When adding a tab call:<br>
+<pre>
+	$('#tabs').find('.scroll-view').scroller('update').scroller('refit');
+		</pre>
+		<br>
+		When removing a tab call:<br>
+<pre>
+	$('#tabs').find('.scroll-view').scroller('forceResize').scroller('refit');
+		</pre>
+<p>Browser Support: ie 7+, firefox, chrome, safari. UI Button bug in ie 6, can be rectified by setting custom button values.</p>
+    </body>
+</html>

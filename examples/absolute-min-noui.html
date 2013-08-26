@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Absolute Minimum For Non Jquey UI List Elements</title>
+       
+        <link href="../css/absolute-min-noui.css" rel="stylesheet" />
+	
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+      <style type='text/css'>
+      		.scroller-button{
+				background:'#fff';border-color:'#fff'
+			}
+			.scroller-background{
+				background:'#fff';			
+				}
+				p{
+					font-weight:bold;
+					font-size:12px;
+				}
+				pre{
+					position:relative;
+					width:90%;
+					left:5%;
+					height:auto;
+					border:1px solid #000;
+					background:#303030;
+					color:#fff;
+					text-align: left;
+					padding:2px;
+					 white-space: pre-wrap;       /* css-3 */
+ 			white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ 	white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+cursor:pointer;
+				}
+				pre .label{
+					position:relative;
+					width:100%;
+					height:auto;
+					padding:0px;
+					margin:0px;
+					color:#fff;
+					border-bottom:1px solid #000
+				}
+				#wrapper{
+					position:relative;
+					width:100%;
+					height:auto;
+				}
+		</style>
+
+        <!-- liteAccordion js -->
+        <script src="../js/jquery.scroller.min.js"></script>
+		 <script type="text/javascript">
+		 	
+		 	$(function(){
+		 		$('#test').scroller({proportion:0.92,
+		 			
+		 			html:{
+		 				buttonLeft:'a',
+		 				buttonRight:'b'
+		 				},
+		 				bspace:0.5
+		 			});
+		 			$('.scroller-button').css({border:$('.scroller-button').css('borderWidth')+' solid #fff'});
+		 	});
+		 </script>
+    </head>
+    <body>
+		</p>
+			Below we have a simple scroller with custom buttons.
+		</p>
+				<div id='wrapper'>
+		        <div id='test'>
+        	<ul>
+        		<li>1</li>
+        		<li>2</li>
+        		<li>3</li>
+        		<li>4</li>
+        		<li>5</li>
+        		<li>6</li>
+        		<li>7</li>
+        		<li>8</li>
+        		<li>9</li>
+        		<li>10</li>
+        	</ul>
+        </div>
+        </div>
+<pre>
+<div class='label'>CSS</div>
+	.scroll-view{
+		overflow:hidden;
+		position:relative;
+		z-index:999;
+	}
+	.scroll-view ul{ 
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		float: left;
+	}
+	.scroll-view  li{
+		position: relative;
+		width:140px;
+		height:20px;
+		display: block;
+		float: left;
+	}
+	.scroller-background{
+		overflow:hidden;
+		position:absolute;
+		width:100%;
+		top:0px;
+		z-index:988;
+	}
+	#wrapper{
+		position:relative;
+		width:100%;
+		height:auto;
+	}
+
+		</pre>
+		<pre>
+<div class='label'>Javascript</div>	
+		$('#test').scroller({proportion:0.92,
+		 	html:{
+		 		buttonLeft:'a',
+		 		buttonRight:'b'
+		 		},
+		 		bspace:0.5
+		 	});
+		 $('.scroller-button').css({border:$('.scroller-button').css('borderWidth')+' solid #fff'});
+		</pre>
+<pre>
+<div class='label'>HTML (Best Practise)</div>	
+<code>
+    &lt;div id='wrapper'&gt;<br/>	 &lt;div id='test'&gt;<br/>        &lt;ul&gt;<br/>        		&lt;li&gt;1&lt;/li&gt;<br/>        		&lt;li&gt;2&lt;/li&gt;<br/>        		&lt;li&gt;3&lt;/li&gt;<br/>        		&lt;li&gt;4&lt;/li&gt;<br/>        		&lt;li&gt;5&lt;/li&gt;<br/>        		&lt;li&gt;6&lt;/li&gt;<br/>        		&lt;li&gt;7&lt;/li&gt;<br/>        		&lt;li&gt;8&lt;/li&gt;<br/>        		&lt;li&gt;9&lt;/li&gt;<br/>        		&lt;li&gt;10&lt;/li&gt;<br/>        &lt;/ul&gt;<br/>      &lt;/div&gt;<br/>     &lt;/div&gt;
+</code>
+</pre>
+    </body>
+</html>

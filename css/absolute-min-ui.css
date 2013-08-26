@@ -1,0 +1,39 @@
+.scroller-background{
+	overflow:hidden;
+	position:absolute;
+	width:100%;
+	border-radius:3px;
+	
+	top:0px;
+	z-index:988;
+	left:0px;
+	margin:0px;
+	padding:0px;
+	
+}
+.scroll-view ul{
+
+	/*Only set this when the initial size of the is larger than scroll-view*/
+	position:relative;
+width:3000%;
+top:0px
+}
+.scroll-view li{
+	position:relative;
+}
+.scroll-view{
+	position:relative;
+	z-index:999;
+	overflow:hidden;
+	/*scroller must have an initial size*/
+	width:93%;
+	margin:0px;
+	padding:0px;
+}
+.wrapper{
+position:relative;
+width:100%;
+margin:0px;
+padding:0px;
+text-align:left;
+}
